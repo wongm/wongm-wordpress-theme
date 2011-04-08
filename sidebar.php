@@ -1,7 +1,9 @@
 <div class="span-8 last">
     <div id="subscriptions">
+    <?php /*
         <a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/rss.png" alt="Subscribe to RSS Feed" title="Subscribe to RSS Feed" /></a>		
 		<?php if(get_theme_option('twitter') != '') { ?><a href="<?php echo get_theme_option('twitter'); ?>" title="<?php echo get_theme_option('twittertext'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="<?php echo get_theme_option('twittertext'); ?>" alt="<?php echo get_theme_option('twittertext'); ?>"  /></a><?php } ?>
+		*/ ?>
     </div>
 	<div id="sidebar">
         <ul>

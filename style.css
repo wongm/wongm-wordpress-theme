@@ -255,14 +255,13 @@ a.readmore:hover {
 }
     
 .entry {
-	text-align: justify;
 	line-height: 20px;
 	padding-top: 8px;
     font-size: 14px;
     color: #5b5b5b;
 }
 .navigation {
-	padding: 5px 0 50px;
+	padding: 5px 0 30px;
 }
 
 blockquote {
