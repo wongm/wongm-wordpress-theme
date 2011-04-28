@@ -342,6 +342,11 @@ div.imported {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
+
+.related {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
 	
 /******************************************************
     [ SIDEBAR(S) ]

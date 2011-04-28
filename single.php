@@ -39,7 +39,10 @@
 								Both comments and pings are currently closed.
 	
 							<?php } edit_post_link('Edit this entry','','.'); ?>
+							
 						</div><!--/post-<?php the_ID(); ?>-->
+						
+				<?php related_posts(); ?>
 						
 				<?php comments_template(); ?>
 				
