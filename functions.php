@@ -8,6 +8,23 @@ if ( function_exists('register_sidebar') ) {
     ));
 }
 
+function modern_style_page_menu_args( $args ) {
+	$args['show_home'] = true;
+	return $args;
+}
+add_filter( 'wp_page_menu_args', 'modern_style_page_menu_args' );
+
+
+if ( ! function_exists( 'modern_style_setup' ) )
+{
+	function modern_style_setup() {
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus( array(
+			'primary' => __( 'Primary Navigation', 'modern-style' ),
+		) );
+	}
+}
+
 $themename = "Modern Style";
 $shortname = str_replace(' ', '_', strtolower($themename));
 
@@ -89,7 +106,7 @@ $options = array (
 
 function mytheme_add_admin() {
     global $themename, $shortname, $options;
-    
+	
     if ( $_GET['page'] == basename(__FILE__) ) {
         if ( $_REQUEST['action'] == 'save') {
             foreach ($options as $value) {
