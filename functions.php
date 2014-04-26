@@ -8,11 +8,40 @@ if ( function_exists('register_sidebar') ) {
     ));
 }
 
+add_filter( 'wp_page_menu_args', 'modern_style_page_menu_args' );
 function modern_style_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'modern_style_page_menu_args' );
+
+add_filter( 'the_excerpt', 'mw_excerpt');
+function mw_excerpt( $content ) {
+	return str_replace('This is an post from the olden days &#8211; read more about them here. ', '', $content);
+}
+
+add_action( 'init', 'register_my_menus' );
+
+function register_my_menus() {
+	register_nav_menus(
+		array(
+		'main-menu' => __( 'Main Menu' )
+		)
+	);
+}
+
+
+function mybloginfo($result='', $show='') {
+        switch ($show) {
+        case 'wpurl':
+                $result = SITE_URL;
+                break;
+        case 'template_directory':
+                $result = TEMPL_DIR;
+                break;
+        default: 
+        }
+        return $result;
+}
 
 
 if ( ! function_exists( 'modern_style_setup' ) )
