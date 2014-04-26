@@ -45,22 +45,4 @@
 				</div>
                 
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-<?php /*
-                
-					<ul id="nav">
-						<?php	
-					$catTitle = explode('/', $_SERVER['REQUEST_URI']);
-					$pageTitle = $catTitle[1];
-					$catTitle = $catTitle[2];	
-					?>
-						<li <?php if(is_home()) { ?> class="current_page_item" <?php } ?>><a href="<?php echo get_option('home'); ?>/">Home</a></li>
-						<li <?php if($catTitle == 'trains') { ?> class="current_page_item" <?php } ?>><a href="/category/trains">Trains</a></li>
-						<li <?php if($catTitle == 'technology') { ?> class="current_page_item" <?php } ?>><a href="/category/technology">Technology</a></li>
-						<li <?php if($catTitle == 'travel') { ?> class="current_page_item" <?php } ?>><a href="/category/travel">Travel</a></li>
-						<li <?php if($catTitle == 'other') { ?> class="current_page_item" <?php } ?>><a href="/category/other">The others</a></li>
-						<?php wp_list_pages('depth=1&number=6&sort_column=menu_order&title_li=' ); ?>		
-					</ul>
-				</div>
-				
-				*/ ?>
             <?php if(!$sidebar_over_header) { ?></div><div class="span-16"><?php } ?>
