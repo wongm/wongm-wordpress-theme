@@ -251,7 +251,7 @@ a.readmore:hover {
 	padding-left:2em;
 }
 
-.entry blockquote ul, .entry blockquote ol {
+.entry blockquote ul:last-child, .entry blockquote ol:last-child {
 	margin-bottom: 0;
 }
 
