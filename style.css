@@ -489,17 +489,32 @@ div.imported {
 }
 	
 #sidebar ul li li {
-	padding: 3px 0px 3px 15px;
+	padding: 3px 0px 3px 0;
 	margin: 0px;
-	background: url(images/arrow.gif) no-repeat top left;
 }
 	
 #sidebar ul li ul li {
-	background: url(images/arrow.gif) no-repeat top left;
-	padding: 2px 0px 2px 15px;
+	padding: 2px 0px 2px 0;
 	margin: 2px 0;
 }
 
+#sidebar ul li li::before, #sidebar ul li ul li::before {
+    content: "▶";
+    padding-right: 5px;
+    color: #c5c5c5;
+}
+
+.collapsed-archives label::before {
+    color: #c5c5c5;
+}
+
+.collapsed-archives > ul > li::before {
+    display: none;
+}
+
+.collapsed-archives input {
+    top: inherit;
+}
 #wp-calendar th {
 	font-style: normal;
 	text-transform: capitalize;
