@@ -515,6 +515,7 @@ div.imported {
 .collapsed-archives input {
     top: inherit;
 }
+
 #wp-calendar th {
 	font-style: normal;
 	text-transform: capitalize;
@@ -523,7 +524,8 @@ div.imported {
 }
 #wp-calendar caption {
 	padding: 2px 4px;
-	text-transform: uppercase;	margin: 2px 0 2px 0;
+	text-transform: uppercase;	
+        margin: 2px 0 2px 0;
 }
 
 #wp-calendar td {
@@ -795,7 +797,6 @@ div.imported {
 #flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
 #flickr_icon_td {padding:0 5px 0 0 !important;}
 .flickr_badge_image {text-align:center !important;}
-.flickr_badge_image img {border: 1px solid black !important;}
 #flickr_badge_uber_wrapper {width:150px;margin-bottom:0px !important;}
 #flickr_badge_wrapper {margin-bottom:0px !important;}
 #flickr_www {display:block; text-align:center; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
@@ -807,7 +808,7 @@ div.imported {
 
 
 /*
-Notes: You shouldn't really have to mess with anything down here. Unless you are drastically chaning the Twenty Ten theme.
+Notes: You shouldn't really have to mess with anything down here. Unless you are drastically changing the Twenty Ten theme.
 	
 /* --------------------------------------------------------*/
 /*-----------------MMMMM----------MMMMM----E---------------*/
