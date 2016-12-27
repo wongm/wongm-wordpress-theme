@@ -777,6 +777,17 @@ div.imported {
     text-decoration: none;
 }
 
+.yarpp-related a {
+    font-size: 14px;
+    font-weight: normal !important;
+    line-height: 20px;
+}
+
+.yarpp-related h3 {
+    font-size: 1.5em !important;
+    font-weight: normal !important;
+}
+
 /******************************************************
     [ Flickr ]
 *******************************************************/
