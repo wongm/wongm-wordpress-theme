@@ -815,12 +815,23 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 /*-----------------MMMM------------MMMM--------------------*/
 /* --------------------------------------------------------*/
 
-@media only screen and (min-width: 481px) and (max-width: 1024px){
-	#wrapper, #footer, #container .span-24 {
-		margin: 20px auto;
-		width: 90%;
+@media only screen and (min-width: 660px) and (max-width: 1024px){
+	#wrapper, #footer {
+		margin: 0px auto;
+		width: 95%;
 	}
+	#container .span-24 {
+		width: 100%;
+	}
+	#menu-main li {
+		margin: 0px 0 20px 0;
+	}
+	#content {
+		margin-top: 0;
+	}
+}
 	  
+@media only screen and (min-width: 481px) and (max-width: 1024px){	  
 	#access,
 	#access .menu-header,
 	div.menu,
@@ -885,8 +896,13 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 @media screen and (max-width: 660px) {
 	#wrapper, #footer, #container .span-24 {
 		margin: 5px auto;
-		width: 90%;
+		width: 95%;
+	}
+	#wrapper, #footer {
 		padding: 0 3%;
+	}
+	#container .span-16 {
+		width: 100%;
 	}
 	
 	#access,
@@ -903,8 +919,19 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 		overflow:hidden;
 	}
 	
+	#header {
+		height: 163px;
+	}
+	
 	#header h1 {
 		width: 100%;
+		font-size: 46px;
+		height: 120px;
+	}
+	
+	#header h2 {
+		color: #262626;
+		margin: 10px 0;
 	}
 	
 	#container {
