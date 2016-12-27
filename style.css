@@ -160,7 +160,7 @@ a:hover {
 	border-bottom: 1px solid #ccc;
 }
 
-.post p {
+.post p, .post ul, .post ol {
 	margin-bottom: 10px;
 }
 
@@ -238,15 +238,23 @@ a.readmore:hover {
 	background-color: #cdcbcb;
 }
 
-.entry li {
-	padding: 3px 0;
-}
-
 .entry li ul {
 	padding: 3px 0;
 }
 
-.entry ul, ol {
+.entry li {
+	padding: 3px 0;
+}
+
+.entry dt {
+	padding-bottom: 3px;
+}
+
+.entry dd {
+	padding-bottom: 8px;
+}
+
+.entry ul, ol, dl {
 	margin:0 1.5em 1.5em 0;
 	padding-left:2em;
 }
