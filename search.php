@@ -15,8 +15,8 @@
                 </div>
 
 				<div class="entry">
-                    <?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) { the_post_thumbnail(array(200,160), array("class" => "alignleft post_thumbnail")); } ?>
 					<?php the_excerpt() ?>
+                    <?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() && strpos(get_the_excerpt(), '<img src') == false ) { the_post_thumbnail('500w', array("style" => "max-width: 500px; height: auto;")); } ?>
                     <div class="readmorecontent">
 						<a class="readmore" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Read More &raquo;</a>
 					</div>
