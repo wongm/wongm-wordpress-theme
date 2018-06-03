@@ -12,7 +12,6 @@
                         </div>
 		
 						<div class="entry">
-                            <?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) { the_post_thumbnail(array(200,160), array("class" => "alignleft post_thumbnail")); } ?>
 							<?php the_content(''); ?>
                             <div class="readmorecontent">
 								<a class="readmore" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Read More &raquo;</a>

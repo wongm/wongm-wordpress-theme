@@ -11,7 +11,6 @@
                             </div>
 			
 							<div class="entry">
-                                <?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) { the_post_thumbnail(array(300,225), array("class" => "alignleft post_thumbnail")); } ?>
 								<?php the_content('Read the rest of this entry &raquo;'); ?>
 								<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 							</div>
