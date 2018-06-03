@@ -19,7 +19,12 @@
 <link rel="shortcut icon" href="<?php echo get_theme_option('favicon'); ?>" type="image/x-icon" />
 <?php } ?>
 
-<?php wp_head(); ?>
+<?php wp_head(); ?> 
+
+<?php if ( is_singular() && comments_open() && get_option('thread_comments' ) ) {
+	wp_enqueue_script( 'comment-reply' );
+} ?>
+
 <?php echo get_theme_option("head") . "\n"; ?>
 </head>
 <body>
