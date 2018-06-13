@@ -429,6 +429,7 @@ div.imported {
 	
 #s {
 	width: 190px;
+	width: calc(100% - 89px);
 	padding: 4px;
     margin:3px 0 0 0;
     background: none;
@@ -514,6 +515,14 @@ div.imported {
 
 .collapsed-archives input {
     top: inherit;
+}
+
+.r34otd-dateline {
+    padding-left: 20px;
+}
+
+.r34otd-headline {
+    display: inline;
 }
 
 #wp-calendar th {
@@ -963,6 +972,15 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 		width: 99%; 
 	}
 	
+	#sidebar {		
+		width: 90%; 
+	}
+	
+	#s {
+		width: 133px;
+		width: calc(100% - 89px);
+	}
+	
 	#site-generator, #header h2, #site-info, #header h1 {
 		clear: left;
 		float: left;
@@ -970,6 +988,10 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 		margin: 0 0 10px;
 		text-align: left;
 		line-height: 1em;
+	}
+	
+	.r34otd-dateline {
+		display: inline;
 	}
 	
 	/*
