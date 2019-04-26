@@ -320,4 +320,4 @@ function aussiewongm_jetpack_twitter_cards_site_tag( $tag ) {
 }
 add_filter( 'jetpack_twitter_cards_site_tag', 'aussiewongm_jetpack_twitter_cards_site_tag' );
 
-?>
+?>
