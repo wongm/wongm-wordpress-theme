@@ -358,16 +358,24 @@ div.imported {
     border-radius: 5px;
 }
 
+.jp-relatedposts-headline {
+    width: 100%;
+}
+
 .related {
 	margin-bottom: 15px;
 	border-bottom: 1px solid #ccc;
+}
+
+.cb_p6_patreon_button {
+	padding-top: 10px;
 }
 
 #content table {
 	border: 1px solid #CADAE7;
 }
 
-#content tr td {
+#content tr td, .cb_p6_patreon_button  {
     border-top: 1px solid #CADAE7;
 }
 
