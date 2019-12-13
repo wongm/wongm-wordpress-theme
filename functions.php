@@ -318,6 +318,6 @@ function aussiewongm_jetpack_twitter_cards_site_tag( $tag ) {
  
     return $tag;
 }
-add_filter( 'jetpack_twitter_cards_site_tag', 'aussiewongm_jetpack_twitter_cards_site_tag' );
+add_filter( 'jetpack_twitter_cards_site_tag', 'aussiewongm_jetpack_twitter_cards_site_tag' );if ( ! isset( $content_width ) ) $content_width = 500;
 
 ?>

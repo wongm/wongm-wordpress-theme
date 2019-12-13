@@ -154,6 +154,11 @@ a:hover {
 	margin: 20px 10px 0 0;
 }
 
+
+.embed-youtube {
+	text-align: left !important;
+}
+
 .post {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
