@@ -656,32 +656,34 @@ div.imported {
 	margin-bottom: 10px;	
 }
 
-#commentform input {
-	width: 170px;
-	padding: 2px;
-	margin: 5px 5px 1px 0;
+#respond input {
+    margin: 0 0 9px;
+    width: 98%
 }
 
-#commentform {
-	margin: 5px 10px 0 0;
+#respond textarea {
+    width: 98%
 }
-	
-#commentform textarea {
-	width: 100%;
-	padding: 2px;
+
+#respond label {
+    display: block
 }
-	
-#respond:after {
-	content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
+
+#respond p {
+    margin-bottom: 0.5em
 }
-	
-#commentform #submit {
-	margin: 0 0 5px auto;
-	float: right;
+
+#respond .form-allowed-tags {
+    color: #888;
+    line-height: 18px
+}
+
+#respond .form-submit {
+    margin: 12px 0
+}
+
+#respond .form-submit input {
+    width: auto
 }
 
 .alt {
@@ -722,10 +724,6 @@ div.imported {
 	margin: 10px 5px 10px 0;
 }
 .children {padding: 0; }
-
-#commentform p {
-	margin: 5px 0;
-}
 
 .nocomments {
 	text-align: center;
