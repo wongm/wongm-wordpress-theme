@@ -14,6 +14,9 @@
 								<?php the_content('Read the rest of this entry &raquo;'); ?>
 								<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 							</div>
+							
+							<?php related_posts(); ?>
+							
 							<div class="postmeta">Posted in <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?> </div>
 						
 							<div class="navigation clearfix">
@@ -40,8 +43,6 @@
 							<?php } edit_post_link('Edit this entry','','.'); ?>
 							
 						</div><!--/post-<?php the_ID(); ?>-->
-						
-				<?php related_posts(); ?>
 						
 				<?php comments_template(); ?>
 				

@@ -365,8 +365,8 @@ div.imported {
 }
 
 .related {
-	margin-bottom: 15px;
-	border-bottom: 1px solid #ccc;
+	padding: 1em 0 0.1em;
+	border-top: 1px solid #ccc;
 }
 
 .cb_p6_patreon_button {
@@ -803,8 +803,11 @@ div.imported {
 }
 
 .yarpp-related h3 {
-    font-size: 1.5em !important;
-    font-weight: normal !important;
+	line-height: 1.2;
+	font-size: 9pt !important;
+	font-weight: 700 !important;
+	text-transform: none !important;
+	padding-bottom: 1em !important;
 }
 
 /******************************************************
