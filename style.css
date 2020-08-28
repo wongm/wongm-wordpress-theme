@@ -360,7 +360,7 @@ div.imported {
     border-radius: 5px;
 }
 
-.jp-relatedposts-headline {
+.jp-relatedposts-headline, .sd-title {
     width: 100%;
 }
 
